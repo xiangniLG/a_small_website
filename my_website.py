@@ -5,7 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 import json
 
 app = Flask(__name__,template_folder='templates',static_folder='static',static_url_path='/static')
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:xiangniLG@127.0.0.1:3306/moviedetails'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://aaa:bbb@127.0.0.1:3306/moviedetails'#aaa为用户名，bbb为密码。请修改为自己的数据库用户名与密码
 app.config['SECRET_KEY'] = "random string"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = "False"
 
