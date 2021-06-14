@@ -1,0 +1,113 @@
+/* CSS Document */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Grande", ".萍方-简";
+    background: linear-gradient(to right top, #e7d4d0, #dfe7d0)
+}
+
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.container .box {
+    background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+    position: relative;
+    width: 48%;
+    height: 30%;
+    float: left;
+    margin: 1%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.picframe {
+    margin: 0 0 0 2rem;
+}
+
+.rankbox {
+    margin: 0;
+}
+
+.rank {
+    font-size: 150px;
+}
+
+.posterpic {
+    width: 13.5rem;
+    height: 20rem;
+}
+
+.infobox {
+    margin: 5rem 1rem 5rem 1rem;
+}
+
+.moviename {
+    margin: 0 0 2rem 0;
+    font-size: 1.7rem;
+}
+
+.rating {
+    font-size: 1.7rem;
+    margin: 2rem 0 1.3rem 0;
+    color: rgba(208, 225, 31, 1.00);
+}
+
+a.movieinfo:link {
+    text-decoration: none;
+    color: rgba(28, 114, 204, 1.00)
+}
+
+a.movieinfo:visited {
+    text-decoration: none;
+    color: rgba(171, 28, 30, 1.00);
+}
+
+.director {
+    color: rgba(181, 203, 132, 1.00);
+}
+
+.actor {
+    color: rgba(141, 83, 171, 1.00);
+}
+
+.gotoicon {
+    background: rgba(173, 213, 231, 1.00);
+    width: 6rem;
+    position: fixed;
+    bottom: 15%;
+    right: 8%;
+    z-index: 888;
+    border-radius: 0.3rem;
+}
+
+a.iconcontent:link {
+    text-decoration: none;
+    color: rgba(28, 114, 204, 1.00);
+}
+
+a.iconcontent:visited {
+    text-decoration: none;
+    color: rgba(96, 182, 118, 1.00);
+}
+
+.bigbox {
+	margin:0;
+	padding:0;
+    width: 1600px;
+    height: 600px;
+}
+.smallboxes{
+	margin:0;
+	padding:0;
+	display: flex;
+}
+.smallboxes .smallbox{
+	margin: 0;
+	padding:0;
+	width:800px;
+	height:400px;
+}
