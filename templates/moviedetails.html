@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>top250</title>
+</head>
+<link rel="stylesheet" href="static/css/top250.css">
+
+<body>
+    <form action="{{ url_for('searchresult') }}" method="POST">
+        <p>Moviename:<input type="text" name="moviename" /></p>
+        <p><input type="submit" value="submit" /></p>
+    </form>
+    <div class="gotoicon"><a href="{{ url_for('realtimeInfo') }}" class="iconcontent">实时电影数据</a></div>
+    {% for moviedetails in moviedetails %}
+    <div class="container">
+        <div class="box">
+            <div class="rankbox">
+                <p class="rank">{{moviedetails.id}}</p>
+            </div>
+            <div class="picframe">
+                <img src="{{moviedetails.movie_pic_path}}" class="posterpic" />
+            </div>
+            <div class="infobox">
+                <p class="moviename">{{moviedetails.movie_name}}<br>
+                </p>
+                <p class="rating">{{moviedetails.movie_rating}}<span>/10</span></p>
+                <a class="movieinfo" href="{{moviedetails.movie_link}}">电影详情</a>
+                <div class="directorframe">
+                    导演: <br><span class="director">{{moviedetails.movie_director}}</span>
+                </div>
+                <div class="actorframe">
+                    主演：<br>
+                    <span class="actor">{{moviedetails.movie_actor1}}</span> <br>
+                    <span class="actor">{{moviedetails.movie_actor2}}</span> <br>
+                    <span class="actor">{{moviedetails.movie_actor3}}</span></div>
+            </div>
+        </div>
+        {% endfor %}
+</body>
+
+</html>
