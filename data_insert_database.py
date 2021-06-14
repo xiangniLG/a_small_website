@@ -88,9 +88,9 @@ start_urls = ['https://movie.douban.com/top250']
 for i in range(1, 10):
   start_urls.append(f'https://movie.douban.com/top250?start={25 * i}&filter=')
 
-get_data(start_urls[0],mycursor,db)
-# for url in start_urls:
-#   get_data(url,mycursor,db)
+#get_data(start_urls[0],mycursor,db)
+for url in start_urls:
+  get_data(url,mycursor,db)
 
 mycursor.close()
 db.close()
