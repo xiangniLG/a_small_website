@@ -87,9 +87,9 @@ pip install PyMySQL
 在启动data_insert_database.py前，请在连接数据库的语句
 ```
 db=pymysql.connect(
-  user='',
-  password='',#用户名
-  database='moviedetails',#用户密码
+  user='',#用户名
+  password='',#用户密码
+  database='moviedetails',
   port=3306,
   charset='utf8'
 )
