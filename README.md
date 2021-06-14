@@ -129,7 +129,7 @@ app.run(host='0.0.0.0',port=5000)
 
 这个库区别于PyMySQL的地方就在于这里。PyMySQL还是使用的是sql语句，再通过数据游标进行操作。
 
-用户与数据库的交互是通过GET、POST方法实现的。在历史TOP250页面上有一个表单，用来搜索电影在历史上的排位，是通过request判断是否执行了POST方法后，将表单内容传递给SQLAchemy建立的对象，通过filter_by方法进行的检索，再返回搜索结果。
+用户与数据库的交互是通过HTTPS的GET、POST方法实现的。在历史TOP250页面上有一个表单，用来搜索电影在历史上的排位，是通过request判断是否执行了POST方法后，将表单内容传递给SQLAchemy建立的对象，通过filter_by方法进行的检索，再返回搜索结果。
 
 Flask建立网页是通过模板方法render_template进行参数传递。
 
