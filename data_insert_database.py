@@ -74,11 +74,11 @@ def get_data(url,mycursor,db):
     db.commit()
   print(f'{url}爬虫完成')
 
-
+#数据库连接
 db=pymysql.connect(
-  user='root',
-  password='xiangniLG',
-  database='moviedetails',
+  user='',
+  password='',#用户名
+  database='moviedetails',#用户密码
   port=3306,
   charset='utf8'
 )
